@@ -1,0 +1,81 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Profile Card */
+.profile-card {
+    background: #ffffff;
+    width: 500px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading */
+.profile-card h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2a5298;
+    letter-spacing: 1px;
+}
+
+/* Info Sections */
+.info {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid #2a5298;
+    background-color: #f4f7ff;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.info:hover {
+    background-color: #e6ecff;
+}
+
+/* Labels */
+.info span {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Paragraph Text */
+.info p {
+    color: #555;
+    font-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile-card {
+        width: 90%;
+        padding: 25px;
+    }
+}
